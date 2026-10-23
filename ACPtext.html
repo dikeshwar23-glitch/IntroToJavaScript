@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <title>Changing the text color</title>
+        <style>
+
+#text {
+
+position: relative;
+
+left: 0px;
+
+color: blue;
+
+font-size: 30px;
+}
+            h2 {
+                text-align: center;
+            }
+            .buttons {
+                padding: 20px;
+                width: 200px;
+                margin: auto;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Make changes to the text</h2>
+        <p id="text">Hello! I am Hardik</p>
+         <div class="text"></div>
+        <div class="buttons">
+            <button onclick="changeToText()">Change the text color</button>
+            <button onclick="moveText()">Move Text</button>
+        </div>
+        <script>
+
+let position = 0;
+
+function moveText() {
+
+position = position + 50;
+
+document.getElementById("text").style.left =
+
+position + "px";
+let div = document.querySelector(".rectangle");
+ div.onmouseenter = function () {
+                div.style.background  = "red";
+            };
+             div.onmouseleave = function () {
+                div.style.background  = "transparent";
+            };
+
+}
+
+</script>
+    </body>
+</html>
